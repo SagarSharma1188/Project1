@@ -1,0 +1,214 @@
+Question,Answer
+Hello,Hello! How can I help you?
+hello,Hello! How can I help you?
+Hello please,Hello! How can I help you?
+Hi,Hi there! How can I assist you?
+hi,Hi there! How can I assist you?
+Hi please,Hi there! How can I assist you?
+Hey,Hey! Nice to meet you.
+hey,Hey! Nice to meet you.
+Hey please,Hey! Nice to meet you.
+Good morning,Good morning! Have a great day.
+good morning,Good morning! Have a great day.
+Good morning please,Good morning! Have a great day.
+Good afternoon,Good afternoon! How can I help you?
+good afternoon,Good afternoon! How can I help you?
+Good afternoon please,Good afternoon! How can I help you?
+Good evening,Good evening! What can I do for you?
+good evening,Good evening! What can I do for you?
+Good evening please,Good evening! What can I do for you?
+How are you?,"I'm doing well, thanks for asking!"
+how are you?,"I'm doing well, thanks for asking!"
+How are you? please,"I'm doing well, thanks for asking!"
+What is your name?,I am a chatbot built using Python and machine learning.
+what is your name?,I am a chatbot built using Python and machine learning.
+What is your name? please,I am a chatbot built using Python and machine learning.
+Who created you?,I was created as a college machine learning project.
+who created you?,I was created as a college machine learning project.
+Who created you? please,I was created as a college machine learning project.
+What can you do?,I can answer simple questions based on my training data.
+what can you do?,I can answer simple questions based on my training data.
+What can you do? please,I can answer simple questions based on my training data.
+Bye,Goodbye! Have a nice day.
+bye,Goodbye! Have a nice day.
+Bye please,Goodbye! Have a nice day.
+See you later,See you soon!
+see you later,See you soon!
+See you later please,See you soon!
+Thank you,You're welcome!
+thank you,You're welcome!
+Thank you please,You're welcome!
+Thanks,Happy to help!
+thanks,Happy to help!
+Thanks please,Happy to help!
+Can you help me?,Of course! Ask me your question.
+can you help me?,Of course! Ask me your question.
+Can you help me? please,Of course! Ask me your question.
+What is Python?,Python is a high-level programming language.
+what is python?,Python is a high-level programming language.
+What is Python? please,Python is a high-level programming language.
+What is Java?,Java is an object-oriented programming language.
+what is java?,Java is an object-oriented programming language.
+What is Java? please,Java is an object-oriented programming language.
+What is C++?,C++ is a powerful programming language used for system and application development.
+what is c++?,C++ is a powerful programming language used for system and application development.
+What is C++? please,C++ is a powerful programming language used for system and application development.
+What is machine learning?,Machine learning allows computers to learn from data.
+what is machine learning?,Machine learning allows computers to learn from data.
+What is machine learning? please,Machine learning allows computers to learn from data.
+What is artificial intelligence?,Artificial intelligence enables machines to perform tasks that usually require human intelligence.
+what is artificial intelligence?,Artificial intelligence enables machines to perform tasks that usually require human intelligence.
+What is artificial intelligence? please,Artificial intelligence enables machines to perform tasks that usually require human intelligence.
+What is NLP?,Natural Language Processing helps computers understand human language.
+what is nlp?,Natural Language Processing helps computers understand human language.
+What is NLP? please,Natural Language Processing helps computers understand human language.
+What is data science?,Data science extracts useful insights from data.
+what is data science?,Data science extracts useful insights from data.
+What is data science? please,Data science extracts useful insights from data.
+What is pandas?,Pandas is a Python library for data analysis.
+what is pandas?,Pandas is a Python library for data analysis.
+What is pandas? please,Pandas is a Python library for data analysis.
+What is NumPy?,NumPy is a Python library for numerical computing.
+what is numpy?,NumPy is a Python library for numerical computing.
+What is NumPy? please,NumPy is a Python library for numerical computing.
+What is Matplotlib?,Matplotlib is a Python library used for plotting graphs.
+what is matplotlib?,Matplotlib is a Python library used for plotting graphs.
+What is Matplotlib? please,Matplotlib is a Python library used for plotting graphs.
+What is scikit-learn?,Scikit-learn is a machine learning library for Python.
+what is scikit-learn?,Scikit-learn is a machine learning library for Python.
+What is scikit-learn? please,Scikit-learn is a machine learning library for Python.
+What is TensorFlow?,TensorFlow is an open-source deep learning framework.
+what is tensorflow?,TensorFlow is an open-source deep learning framework.
+What is TensorFlow? please,TensorFlow is an open-source deep learning framework.
+What is Dash?,Dash is a framework for building web applications in Python.
+what is dash?,Dash is a framework for building web applications in Python.
+What is Dash? please,Dash is a framework for building web applications in Python.
+What is a chatbot?,A chatbot is a computer program that communicates with users.
+what is a chatbot?,A chatbot is a computer program that communicates with users.
+What is a chatbot? please,A chatbot is a computer program that communicates with users.
+What is TF-IDF?,TF-IDF converts text into numerical features.
+what is tf-idf?,TF-IDF converts text into numerical features.
+What is TF-IDF? please,TF-IDF converts text into numerical features.
+What is Naive Bayes?,Naive Bayes is a probabilistic machine learning algorithm.
+what is naive bayes?,Naive Bayes is a probabilistic machine learning algorithm.
+What is Naive Bayes? please,Naive Bayes is a probabilistic machine learning algorithm.
+What is supervised learning?,Supervised learning uses labeled data for training.
+what is supervised learning?,Supervised learning uses labeled data for training.
+What is supervised learning? please,Supervised learning uses labeled data for training.
+What is unsupervised learning?,Unsupervised learning finds patterns in unlabeled data.
+what is unsupervised learning?,Unsupervised learning finds patterns in unlabeled data.
+What is unsupervised learning? please,Unsupervised learning finds patterns in unlabeled data.
+What is deep learning?,Deep learning is a branch of machine learning based on neural networks.
+what is deep learning?,Deep learning is a branch of machine learning based on neural networks.
+What is deep learning? please,Deep learning is a branch of machine learning based on neural networks.
+What is the capital of India?,The capital of India is New Delhi.
+what is the capital of india?,The capital of India is New Delhi.
+What is the capital of India? please,The capital of India is New Delhi.
+What is the capital of France?,The capital of France is Paris.
+what is the capital of france?,The capital of France is Paris.
+What is the capital of France? please,The capital of France is Paris.
+What is the capital of Japan?,The capital of Japan is Tokyo.
+what is the capital of japan?,The capital of Japan is Tokyo.
+What is the capital of Japan? please,The capital of Japan is Tokyo.
+Who is the Prime Minister of India?,The Prime Minister of India is Narendra Modi.
+who is the prime minister of india?,The Prime Minister of India is Narendra Modi.
+Who is the Prime Minister of India? please,The Prime Minister of India is Narendra Modi.
+Who invented the computer?,Charles Babbage is known as the father of the computer.
+who invented the computer?,Charles Babbage is known as the father of the computer.
+Who invented the computer? please,Charles Babbage is known as the father of the computer.
+Who invented the telephone?,Alexander Graham Bell is credited with inventing the telephone.
+who invented the telephone?,Alexander Graham Bell is credited with inventing the telephone.
+Who invented the telephone? please,Alexander Graham Bell is credited with inventing the telephone.
+Who invented Python?,Python was created by Guido van Rossum.
+who invented python?,Python was created by Guido van Rossum.
+Who invented Python? please,Python was created by Guido van Rossum.
+What is the largest planet?,Jupiter is the largest planet in the Solar System.
+what is the largest planet?,Jupiter is the largest planet in the Solar System.
+What is the largest planet? please,Jupiter is the largest planet in the Solar System.
+What is the smallest planet?,Mercury is the smallest planet in the Solar System.
+what is the smallest planet?,Mercury is the smallest planet in the Solar System.
+What is the smallest planet? please,Mercury is the smallest planet in the Solar System.
+How many days are in a week?,There are seven days in a week.
+how many days are in a week?,There are seven days in a week.
+How many days are in a week? please,There are seven days in a week.
+How many months are in a year?,There are twelve months in a year.
+how many months are in a year?,There are twelve months in a year.
+How many months are in a year? please,There are twelve months in a year.
+What is 2 plus 2?,The answer is 4.
+what is 2 plus 2?,The answer is 4.
+What is 2 plus 2? please,The answer is 4.
+What is 10 multiplied by 5?,The answer is 50.
+what is 10 multiplied by 5?,The answer is 50.
+What is 10 multiplied by 5? please,The answer is 50.
+What is the speed of light?,"The speed of light is approximately 299,792,458 meters per second."
+what is the speed of light?,"The speed of light is approximately 299,792,458 meters per second."
+What is the speed of light? please,"The speed of light is approximately 299,792,458 meters per second."
+What is the largest ocean?,The Pacific Ocean is the largest ocean.
+what is the largest ocean?,The Pacific Ocean is the largest ocean.
+What is the largest ocean? please,The Pacific Ocean is the largest ocean.
+What is the tallest mountain?,Mount Everest is the tallest mountain on Earth.
+what is the tallest mountain?,Mount Everest is the tallest mountain on Earth.
+What is the tallest mountain? please,Mount Everest is the tallest mountain on Earth.
+What is an operating system?,An operating system manages computer hardware and software resources.
+what is an operating system?,An operating system manages computer hardware and software resources.
+What is an operating system? please,An operating system manages computer hardware and software resources.
+What is RAM?,RAM is temporary memory used by a computer while running programs.
+what is ram?,RAM is temporary memory used by a computer while running programs.
+What is RAM? please,RAM is temporary memory used by a computer while running programs.
+What is a CPU?,The CPU is the brain of the computer.
+what is a cpu?,The CPU is the brain of the computer.
+What is a CPU? please,The CPU is the brain of the computer.
+What is a GPU?,A GPU is specialized hardware for graphics and parallel computing.
+what is a gpu?,A GPU is specialized hardware for graphics and parallel computing.
+What is a GPU? please,A GPU is specialized hardware for graphics and parallel computing.
+What is an algorithm?,An algorithm is a step-by-step procedure to solve a problem.
+what is an algorithm?,An algorithm is a step-by-step procedure to solve a problem.
+What is an algorithm? please,An algorithm is a step-by-step procedure to solve a problem.
+What is a database?,A database stores and organizes data.
+what is a database?,A database stores and organizes data.
+What is a database? please,A database stores and organizes data.
+What is SQL?,SQL is a language used to manage relational databases.
+what is sql?,SQL is a language used to manage relational databases.
+What is SQL? please,SQL is a language used to manage relational databases.
+What is HTML?,HTML is the standard markup language for web pages.
+what is html?,HTML is the standard markup language for web pages.
+What is HTML? please,HTML is the standard markup language for web pages.
+What is CSS?,CSS is used to style web pages.
+what is css?,CSS is used to style web pages.
+What is CSS? please,CSS is used to style web pages.
+What is JavaScript?,JavaScript adds interactivity to web pages.
+what is javascript?,JavaScript adds interactivity to web pages.
+What is JavaScript? please,JavaScript adds interactivity to web pages.
+What is Git?,Git is a version control system.
+what is git?,Git is a version control system.
+What is Git? please,Git is a version control system.
+What is GitHub?,GitHub is a platform for hosting Git repositories.
+what is github?,GitHub is a platform for hosting Git repositories.
+What is GitHub? please,GitHub is a platform for hosting Git repositories.
+What is cloud computing?,Cloud computing provides computing resources over the internet.
+what is cloud computing?,Cloud computing provides computing resources over the internet.
+What is cloud computing? please,Cloud computing provides computing resources over the internet.
+What is cybersecurity?,Cybersecurity protects systems and data from digital attacks.
+what is cybersecurity?,Cybersecurity protects systems and data from digital attacks.
+What is cybersecurity? please,Cybersecurity protects systems and data from digital attacks.
+Tell me a joke,Why do programmers prefer dark mode? Because light attracts bugs!
+tell me a joke,Why do programmers prefer dark mode? Because light attracts bugs!
+Tell me a joke please,Why do programmers prefer dark mode? Because light attracts bugs!
+I love programming,Programming is a great skill to learn.
+i love programming,Programming is a great skill to learn.
+I love programming please,Programming is a great skill to learn.
+Are you human?,"No, I am an AI chatbot."
+are you human?,"No, I am an AI chatbot."
+Are you human? please,"No, I am an AI chatbot."
+What is your purpose?,My purpose is to answer your questions.
+what is your purpose?,My purpose is to answer your questions.
+What is your purpose? please,My purpose is to answer your questions.
+Can you learn new things?,"Yes, by updating my training dataset and retraining the model."
+can you learn new things?,"Yes, by updating my training dataset and retraining the model."
+Can you learn new things? please,"Yes, by updating my training dataset and retraining the model."
+Do you like Python?,Yes! Python is one of my favorite programming languages.
+do you like python?,Yes! Python is one of my favorite programming languages.
+Do you like Python? please,Yes! Python is one of my favorite programming languages.
+Good night,Good night! Sleep well.
+good night,Good night! Sleep well.
+Good night please,Good night! Sleep well.
