@@ -1,4 +1,4 @@
-import pandas as pd
+tuimport pandas as pd
 import nltk
 
 from sklearn.feature_extraction.text import TfidfVectorizer
