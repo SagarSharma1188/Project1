@@ -1,37 +1,38 @@
-tuimport pandas as pd
+import pandas as pd
 import nltk
 
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.naive_bayes import MultinomialNB
-from sklearn.pipeline import make_pipeline
+from sklearn.pipeline import Pipeline
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 
 import dash
-from dash import dcc, html
+from dash import html, dcc
 from dash.dependencies import Input, Output, State
 
 # -----------------------------
-# Download NLTK tokenizer
+# Download NLTK
 # -----------------------------
 nltk.download("punkt")
 
 # -----------------------------
 # Load Dataset
 # -----------------------------
-data = pd.read_csv("chatbot_dataset.csv")
+data = pd.read_csv("chatbot_dataset_500.csv")
 
-# Remove missing values
-data = data.dropna(subset=["Question", "Answer"])
+data = data.dropna()
 
 data["Question"] = data["Question"].astype(str)
 data["Answer"] = data["Answer"].astype(str)
 
 # -----------------------------
-# Text Preprocessing
+# Preprocessing
 # -----------------------------
 def preprocess(text):
-    tokens = nltk.word_tokenize(text.lower())
+    text = text.lower()
+    text = re.sub(r"[^a-zA-Z0-9 ]", "", text)
+    tokens = nltk.word_tokenize(text)
     return " ".join(tokens)
 
 data["Question"] = data["Question"].apply(preprocess)
@@ -42,107 +43,200 @@ data["Question"] = data["Question"].apply(preprocess)
 X_train, X_test, y_train, y_test = train_test_split(
     data["Question"],
     data["Answer"],
-    test_size=0.2,
+    test_size=0.1,
     random_state=42
 )
 
 # -----------------------------
-# Train Model
+# Build Model
 # -----------------------------
-model = make_pipeline(
-    TfidfVectorizer(),
-    MultinomialNB()
-)
+model = Pipeline([
+    ("tfidf", TfidfVectorizer(
+        stop_words="english",
+        ngram_range=(1,2)
+    )),
+    ("nb", MultinomialNB())
+])
 
+# -----------------------------
+# Train
+# -----------------------------
 model.fit(X_train, y_train)
 
 print("Model trained successfully!")
 
 # -----------------------------
-# Evaluate Model
+# Accuracy
 # -----------------------------
 predictions = model.predict(X_test)
+
 accuracy = accuracy_score(y_test, predictions)
 
-print(f"Accuracy: {accuracy:.2f}")
+print(f"Accuracy : {accuracy*100:.2f}%")
 
 # -----------------------------
 # Chatbot Function
 # -----------------------------
 def get_response(question):
 
-    if question.strip() == "":
+    if question is None or question.strip() == "":
         return "Please enter a question."
 
     question = preprocess(question)
 
-    return model.predict([question])[0]
+    response = model.predict([question])[0]
+
+    return response
 
 # -----------------------------
 # Dash App
 # -----------------------------
 app = dash.Dash(__name__)
 
-app.layout = html.Div([
+app.layout = html.Div(
 
-    html.H1(
-        "AI Chatbot",
-        style={"textAlign": "center"}
-    ),
+    style={
+        "width":"75%",
+        "margin":"auto",
+        "fontFamily":"Arial",
+        "padding":"20px"
+    },
 
-    dcc.Textarea(
-        id="user-input",
-        placeholder="Type your question here...",
-        style={
-            "width": "100%",
-            "height": "100px"
-        }
-    ),
+    children=[
 
-    html.Br(),
+        html.H1(
+            "🌾 Crop Yield Prediction Assistant",
+            style={
+                "textAlign":"center",
+                "color":"green"
+            }
+        ),
 
-    html.Button(
-        "Submit",
-        id="submit-button",
-        n_clicks=0
-    ),
+        html.H3(
+            f"Model Accuracy : {accuracy*100:.2f}%",
+            style={
+                "textAlign":"center",
+                "color":"blue"
+            }
+        ),
 
-    html.Br(),
-    html.Br(),
+        html.Hr(),
 
-    html.Div(
-        id="chatbot-output",
-        style={
-            "padding": "15px",
-            "fontSize": "18px"
-        }
-    )
+        dcc.Textarea(
 
-])
+            id="user-input",
+
+            placeholder="""
+Examples:
+
+What is crop yield?
+Explain rainfall.
+Tell me about irrigation.
+What is loam soil?
+Can farmers use this project?
+            """,
+
+            style={
+                "width":"100%",
+                "height":"150px",
+                "fontSize":"16px",
+                "padding":"10px"
+            }
+
+        ),
+
+        html.Br(),
+        html.Br(),
+
+        html.Button(
+            "Ask",
+            id="submit-button",
+            n_clicks=0,
+            style={
+                "backgroundColor":"green",
+                "color":"white",
+                "padding":"10px 30px",
+                "fontSize":"18px",
+                "border":"none",
+                "cursor":"pointer"
+            }
+        ),
+
+        html.Br(),
+        html.Br(),
+
+        html.Div(
+
+            id="chatbot-output",
+
+            style={
+                "border":"2px solid green",
+                "borderRadius":"10px",
+                "padding":"20px",
+                "backgroundColor":"#f4fff4",
+                "fontSize":"18px"
+            }
+
+        )
+
+    ]
+
+)
 
 # -----------------------------
 # Callback
 # -----------------------------
 @app.callback(
-    Output("chatbot-output", "children"),
-    Input("submit-button", "n_clicks"),
-    State("user-input", "value")
+
+    Output("chatbot-output","children"),
+
+    Input("submit-button","n_clicks"),
+
+    State("user-input","value")
+
 )
-def update_output(n_clicks, user_input):
+
+def update_output(n_clicks,user_input):
 
     if n_clicks == 0:
-        return "Ask me something!"
+
+        return html.Div([
+
+            html.H3("Welcome!"),
+
+            html.P("I can answer questions about:"),
+
+            html.Ul([
+                html.Li("Crop Yield"),
+                html.Li("Rainfall"),
+                html.Li("Temperature"),
+                html.Li("Soil Types"),
+                html.Li("Weather"),
+                html.Li("Fertilizer"),
+                html.Li("Irrigation"),
+                html.Li("Machine Learning")
+            ])
+
+        ])
 
     response = get_response(user_input)
 
     return html.Div([
-        html.P(f"You: {user_input}"),
+
+        html.H4("👤 You"),
+
+        html.P(user_input),
+
         html.Hr(),
-        html.P(f"Bot: {response}")
+
+        html.H4("🌾 Assistant"),
+
+        html.P(response)
+
     ])
 
 # -----------------------------
-# Run App
+# Run
 # -----------------------------
 if __name__ == "__main__":
     app.run(debug=True)
